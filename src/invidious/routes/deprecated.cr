@@ -3,7 +3,7 @@
 module Invidious::Routes::Deprecated
   def self.opportunistic_notice(env)
     if env.get? "user"
-      templated "deprecated"
+      rendered "deprecated"
     end
 
     return Invidious::Routes::Misc.cross_instance_redirect(env)
@@ -11,7 +11,7 @@ module Invidious::Routes::Deprecated
   
 
   def self.deprecated_notice(env)
-    templated "deprecated"
+    rendered "deprecated"
   end
 
   def self.deprecated_notice_raw(env)
