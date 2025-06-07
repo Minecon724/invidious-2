@@ -1,0 +1,18 @@
+<h3>This Invidious instance is no longer available.</h3>
+
+<p style="margin-bottom: 4px;"><%= translate(locale, "next_steps_error_message") %></p>
+
+<ul>
+    <li>
+        <a href="/redirect?referer=#{env.get("current_page")}"><%= translate(locale, "Switch Invidious Instance") %></a>
+    </li>
+    <li>
+        <a rel="noreferrer noopener" href="https://youtube.com#{env.request.resource}"><%= translate(locale, "next_steps_error_message_go_to_youtube") %></a>
+    </li>
+    <li>
+        <a href="/preferences?referer=#{env.get("current_page")}">Manage your id.420129.xyz account</a>
+    </li>
+    <li>
+        <a href="https://git.m724.eu/id.420129/about">Read more</a>
+    </li>
+</ul>
